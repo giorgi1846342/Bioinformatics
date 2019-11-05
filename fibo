@@ -1,0 +1,11 @@
+def fib(n):
+    prev = 1
+    curr = 0
+    for i in range(n):
+        p = curr
+        curr = curr + prev
+        prev = p
+    return curr
+
+
+print(fib(25))
