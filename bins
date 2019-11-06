@@ -1,0 +1,18 @@
+def binary_search (arr_n, arr_m):
+    ret = []
+    for i in (arr_m):
+        try:
+            ret.append (arr_n.index(i)+1)
+        except:
+            ret.append (-1)
+    return ret
+        
+
+with open("./rosalind_bins.txt", "r") as file:
+    input_list = file.read().split("\n")
+    n = int(input_list[0])
+    m = int(input_list[1])
+    arr_n = list(map(int,input_list[2].split()))
+    arr_m = list(map(int,input_list[3].split()))
+            
+print(*binary_search(arr_n, arr_m))
