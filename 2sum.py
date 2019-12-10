@@ -30,4 +30,4 @@ for A in arrays:
         p +=1
         
     if flag == False:
-        print(-1) 
+        print(-1)
