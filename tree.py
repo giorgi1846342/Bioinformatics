@@ -6,4 +6,4 @@ with open('rosalind_tree.txt', 'r') as f:
         
 n = adjacency_list[0][0]                                     
 edges = adjacency_list[1:]                                   
-print(n - len(edges) - 1) 
+print(n - len(edges) - 1)
